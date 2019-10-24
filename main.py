@@ -119,5 +119,5 @@ if __name__ == '__main__':
     try:
         bot.run(info.TOKEN)
     except discord.errors.LoginFailure:
-        print(f"Please specify a bot token in {info.CONFIG.filepath}.")
+        print(f"Please specify a proper bot token in {info.CONFIG.filepath}.")
         exit(1)
