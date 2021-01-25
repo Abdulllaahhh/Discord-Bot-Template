@@ -40,10 +40,7 @@ class Bot(commands.Bot):
         self.cogs_loaded = set()
 
     async def ready_status(self):
-        await self.change_presence(
-            status=discord.Status.online,
-            activity=discord.Game(name="Quonauts")
-        )
+        await self.change_presence(status=discord.Status.online)
 
     async def on_connect(self):
         l.info(f"Connected as {self.user}")
